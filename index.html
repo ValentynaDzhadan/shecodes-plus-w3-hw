@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plus week3</title>
-</head>
-<body>
-    <h1>WEEK 3</h1>
-    
-    
-</body>
+  </head>
+  <body>
+    <h1>JS Strings</h1>
+    <script>
+      //replace('','') // toLowerCase() // toUpperCase() // trim() //
+      let country = "Guinea Bissau";
+      console.log(country.replace(" ", "-"));
+
+      let city = " Sydney   ";
+      console.log(city.trim());
+
+      let place = "School";
+      console.log(place.toUpperCase());
+
+      let attraction = "Opera House";
+      console.log(attraction.toLowerCase());
+
+      console.log(
+        `I went to visit the ${attraction} in ${city}, right next to my ${place}. Now, I'm getting ready for my trip to ${country}`
+      );
+    </script>
+  </body>
 </html>
