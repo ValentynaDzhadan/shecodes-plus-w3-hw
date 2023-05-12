@@ -1,13 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plus week3</title>
-</head>
-<body>
-    <h1>WEEK 3</h1>
-    
-    
-</body>
+  </head>
+  <body>
+    <h1>Objects</h1>
+    <script>
+      // JS Challenge 1
+      let weather = {};
+      console.log(weather);
+
+      // JS Challenge 2
+      weather = {
+        humidity: 50,
+        temperature: 19,
+      };
+      console.log(weather);
+
+      // JS Challenge 3
+      console.log(weather.humidity);
+      console.log(weather.temperature);
+
+      // JS Challenge 4
+      weather.windSpeed = 3;
+      console.log(weather);
+
+      // JS Challenge 5
+      console.log(weather["humidity"]);
+      console.log(weather["temperature"]);
+      console.log(weather["windSpeed"]);
+
+      // JS Challenge 6
+
+      let forecast = [
+        { dayOfWeek: "Monday", temperature: 15 },
+        { dayOfWeek: "Tuesday", temperature: 12 },
+        { dayOfWeek: "Wednesday", temperature: 12 },
+        { dayOfWeek: "Thursday", temperature: 15 },
+        { dayOfWeek: "Friday", temperature: 12 },
+        { dayOfWeek: "Saturday", temperature: 17 },
+        { dayOfWeek: "Sunday", temperature: 11 },
+      ];
+
+      forecast.forEach((day) => {
+        console.log(
+          `The temperature on ${day.dayOfWeek} is ${day.temperature}.`
+        );
+      });
+    </script>
+  </body>
 </html>
