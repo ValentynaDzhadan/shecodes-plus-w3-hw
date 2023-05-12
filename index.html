@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Plus week3</title>
-</head>
-<body>
-    <h1>WEEK 3</h1>
-    
-    
-</body>
+  </head>
+  <body>
+    <h1>Arrays VS Objects</h1>
+    <script>
+      let paris = {
+        name: "Paris",
+        country: "France",
+        language: "French",
+        temperature: 18,
+        capitalCity: true,
+      };
+
+      // JS Challenge 1
+      console.log(paris.temperature);
+
+      // JS Challenge 2
+      let sydney = {
+        name: "Sydney",
+        country: "Australia",
+        language: "Dharug",
+        temperature: 22,
+        capitalCity: false,
+      };
+      console.log(sydney.temperature);
+
+      // JS Challenge 3
+      let australianCities = ["Canberra", "Sydney", "Melbourne"];
+      australianCities.forEach((city) => {
+        console.log(city);
+      });
+
+      // JS Challenge 4
+      let austCities = [
+        {
+          name: "Sydney",
+          country: "Australia",
+          language: "Dharug",
+          temperature: 22,
+          capitalCity: false,
+        },
+        {
+          name: "Melbourne",
+          country: "Australia",
+          language: "Dharug",
+          temperature: 20,
+          capitalCity: false,
+        },
+        {
+          name: "Canberra",
+          country: "Australia",
+          language: "Dharug",
+          temperature: 16,
+          capitalCity: true,
+        },
+      ];
+      austCities.forEach((city) => {
+        console.log(`The temperature in ${city.name} is ${city.temperature}.`);
+      });
+    </script>
+  </body>
 </html>
